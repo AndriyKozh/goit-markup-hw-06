@@ -943,6 +943,7 @@ height: 30px;
 border-radius: 50%;
 background-color: var(--color-text);
 border: 1px solid rgba(0, 0, 0, 0.1);
+cursor: pointer;
 }
 
 .modal-close {
@@ -957,9 +958,10 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button:focus .modal-close {
+.modal-button:focus .modal-close,
+.modal-button:hover .modal-close {
 	fill: var(--accent-color);
-	cursor: pointer;
+	
 }
 
 /* Форми модельне вікно */
@@ -1070,10 +1072,11 @@ transform: translate(border);
 	appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
+	
 	}
 
 	.label{
-	
+	cursor: pointer;
 	}
 
 		.checkbox-icon{
